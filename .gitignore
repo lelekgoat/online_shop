@@ -19,6 +19,25 @@
 *.tar.gz
 *.rar
 
+# --- Build-Systeme (Maven & Gradle) ---
+target/
+.gradle/
+build/
+
+# --- IDE Spezifische Dateien (IntelliJ, Eclipse, VS Code) ---
+.idea/
+*.iml
+.project
+.classpath
+.settings/
+.vscode/
+out/
+gen/
+
+# --- Betriebssystem-Müll ---
+.DS_Store
+Thumbs.db
+
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
 replay_pid*
