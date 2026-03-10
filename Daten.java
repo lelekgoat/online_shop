@@ -8,9 +8,11 @@ public class Daten {
         Kunde paul = new Kunde("Paul",a1 ,"Häfele");
         Kunde ali = new Kunde("Ali", a1, "Aktas");
         Kunde azad = new Kunde("Azad",a1,"Köter");
+
+        Produkte airpods = new Produkte(150,"AirPods Pro 2");
         azad.kundenProfilAnzeigen();
-        azad.setAdresse(a2);
-        azad.kundenProfilAnzeigen();
+        airpods.Produktinfo();
+
 
 
     }
