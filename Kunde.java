@@ -2,18 +2,20 @@ package htl.swp2.oop.online_shop;
 
 public class Kunde {
     private String vorname;
-    private String anschrift;
+    private Adresse adresse;
     private String nachname;
 
 
-    public Kunde(String vorname, String anschrift, String nachname){
+    public Kunde(String vorname, Adresse adresse, String nachname){
         this.vorname = vorname;
-        this.anschrift = anschrift;
+        this.adresse = adresse;
         this.nachname = nachname;
     }
     public void kundenProfilAnzeigen(){
-        System.out.printf("%s ; %s ; %s" , vorname , nachname , anschrift);
+        System.out.printf("%s  %s  %s " , vorname , nachname , adresse.getVollstaendigeAdresse());
 
     }
-    public void zeigeDaten(){}
+    public void setAdresse(Adresse a){
+        this.adresse=a;
+    }
 }
